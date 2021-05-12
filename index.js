@@ -15,9 +15,16 @@ const PORT = process.env.PORT || 4000;
 
 app.use("/static",express.static(__dirname +"/static"));
 
+app.use("/css",express.static(__dirname +"/css"));
+
 app.get("/", (req, res) => {
+  res.sendFile(__dirname + "/front.html");
+});
+
+app.get("/index.html", (req, res) => {
   res.sendFile(__dirname + "/index.html");
 });
+
 
 app.post("/paynow", [parseUrl, parseJson], (req, res) => {
     // Route for making payment
@@ -46,7 +53,6 @@ app.post("/paynow", [parseUrl, parseJson], (req, res) => {
   
       checksum_lib.genchecksum(params, config.PaytmConfig.key, function (err, checksum) {
           var txn_url = "https://securegw-stage.paytm.in/theia/processTransaction"; // for staging
-          // var txn_url = "https://securegw.paytm.in/theia/processTransaction"; // for production
   
           var form_fields = "";
           for (var x in params) {
