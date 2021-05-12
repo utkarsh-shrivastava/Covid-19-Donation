@@ -1,0 +1,108 @@
+<html>
+	<head>
+		<title>Donate Form</title>
+		<link rel="stylesheet" href="bootstrap.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+		
+		<style>
+			.bgimage{
+		background-image:url("static/bg1.jpg");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover; 
+		opacity: 90%;
+		height: 120%;
+
+	}
+	.sign-up-form
+	{
+		width:450px;
+		box-shadow: 0 0 3px 0 rgba(255, 0, 0, 0.8);
+		background:#fff;
+		padding:20px;
+		margin:5% auto 0;
+		text-align:center;
+		border-radius: 35px; 
+		opacity:0.8;
+		}
+	.sign-up-form h1
+	{
+		color:#1c8adb;
+	margin-bottom:30px;
+	font-size:23px;
+	}
+	img
+	{
+		width:100px;
+		margin-top:-10px;
+		
+	}
+	.header_area
+	{
+		padding-top:20px;
+	}
+		</style>
+	</head>
+	<body>
+		<div class="bgimage">
+
+		
+		<header class="header_area">
+		<div class="main_menu">
+			<div class="container">
+				<nav class="navbar navbar-expand-lg navbar-light">
+					<div class="container">
+						<a class="navbar-brand logo_h" href="" style="color:black;font-size:20px;font-weight:bold;">Covid-19 Donation</a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+							<ul class="nav navbar-nav menu_nav ml-auto">
+								<li class="nav-item"><a class="nav-link" href="front.html" onMouseOver="this.style.color='red'"onMouseOut="this.style.color='black'" style="color:wheat;">Home</a></li> 
+								&nbsp;&nbsp;&nbsp;&nbsp;<li class="nav-item" ><a class="nav-link" href="" onMouseOver="this.style.color='orange'"onMouseOut="this.style.color='black'" style="color:wheat;">About</a></li> 
+								&nbsp;&nbsp;&nbsp;&nbsp;<li class="nav-item"><a class="nav-link" href="" onMouseOver="this.style.color='orange'"onMouseOut="this.style.color='black'" style="color:wheat;">Contact</a></li>
+							</ul>
+						</div> 
+					</div>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<br>
+	<br>
+	<br>
+	
+	<div class="row my-5">
+		<div class="col-md-4 offset-md-4">
+		  <div class="card">
+			<div class="card-body">
+			  <form class="" action="/paynow" method="post">
+				<div class="form-group">
+				  <label for="">Name: </label>
+				  <input class="form-control" type="text" name="name" value="">
+				</div>
+				<div class="form-group">
+				  <label for="">Email: </label>
+				  <input class="form-control" type="text" name="email" value="">
+				</div> 
+				<div class="form-group">
+				  <label for="">Phone: </label>
+				  <input class="form-control" type="text" name="phone" value="">
+				</div>
+				  <div class="form-group">
+				  <label for="">Amount: </label>
+				  <input class="form-control" type="text" name="amount" value="">
+				</div>
+				<div class="form-group">
+				  <button class="btn form-control btn-primary">Pay Now</button>
+				</div>
+			  </form>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	</body>
+</html>
